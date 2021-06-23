@@ -31,7 +31,7 @@ p#login_header{
 form#form_box{
     display: flex;
     flex-direction: column;
-    margin: 2rem 0 0.9rem 0;
+    margin: 2rem 0 0.4rem 0;
     width: 100%;
 }
 label, .labels{
@@ -68,9 +68,10 @@ label, .labels{
     width: 100%;
     background-color: #CACCCF;
 }
-#icon{
+#eye_icon{
     font-size: 1.2rem;
     color: #08517A;
+    cursor: pointer;
 }
 #submit_btn{
     background-color: #DA8F06;
@@ -91,9 +92,9 @@ p.title, span p{
 .fancy span {
     display: inline-block;
     position: relative;  
-  }
-  .fancy span:before,
-  .fancy span:after {
+}
+.fancy span:before,
+.fancy span:after {
     content: "";
     position: absolute;
     height: 6px;
@@ -101,25 +102,35 @@ p.title, span p{
     border-bottom: 1px solid #E8E8E8;
     top: 0;
     width: 116px;
-  }
-  .fancy span:before {
+}
+.fancy span:before {
     right: 100%;
     margin-right: 15px;
-  }
-  .fancy span:after {
+}
+.fancy span:after {
     left: 100%;
     margin-left: 15px;
-  }
+}
 
 .social{
-    margin: 0.5rem 0 0.4rem 0;
+    margin: 0.5rem 0 0.6rem 0;
 }
 .social_icon{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
 }
-.social_icons{
+.box{
     width: 29px;
     height: 29px;
+    margin-top: 0.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.box img{
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
 }
 .login_footer{
     text-align: center;
