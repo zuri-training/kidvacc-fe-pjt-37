@@ -40,6 +40,10 @@ label, .labels{
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
 .input-box{
     padding: 0.7rem 1rem;
     border-radius: 7px; 
@@ -122,7 +126,7 @@ p.title, span p{
     font-size: 12px;
     font-weight: 800;
 }
-.login_footer a{
+.login_footer a, label + a{
     color: #DA8F06;
     text-decoration: none;
 }
