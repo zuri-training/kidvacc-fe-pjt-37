@@ -1,0 +1,91 @@
+body, *{
+    text-decoration: none;
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay:before {
+    background: rgba(1, 28, 44, 0.8);
+    content:"";
+    position: absolute;
+    height: 100%;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.section{
+    background: url(./images/kidvacFrame.jpg);
+   
+}
+
+/* .img_cover{
+    background: url(./images/imgcover.jpg);
+    position: absolute;   
+    
+    mix-blend-mode: multiply;
+} */
+
+.slide {
+    padding: 10rem;
+}
+
+h3 {
+    /* text-align: center; */
+    padding-top: 0.7rem;
+    color: whitesmoke;
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.slide_btn {
+    padding-top: 2rem;
+}
+
+.slide_btn a {
+    background: #E44C65;
+    text-decoration: none;
+    color: #bcc3c7;
+    font-size: 0.9rem;
+    padding: 10px 30px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.sub_info {
+    display: flex;
+    height: 12em;
+    width: 90%;
+    margin-left: auto;
+ }
+
+.gallery_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.text {
+    display: inline;
+    width: 70%;
+    height: 80px;
+    color: whitesmoke;
+
+}
+ div.img img {
+     width: 50px;
+     height: 50px;
+ }
