@@ -5,13 +5,34 @@
 }
 body{
     background-color: #E5E5E5;
+    box-sizing: border-box;
 }
-.container{
-    display: flex;
+/* Overlay effect styling*/
+.overlay_container{
     justify-content: center;
     align-items: center;
-    height: 100vh;
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
 }
+.closebtn{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    color: #000;
+    font-size: 3rem;
+    z-index: 3;
+}
+/* end of overlay effect styling */
 .login_box{
     position: relative;
     background-color: #FFF;
@@ -31,10 +52,10 @@ p#login_header{
 form#form_box{
     display: flex;
     flex-direction: column;
-    margin: 2rem 0 0.4rem 0;
+    margin: 1.4rem 0 0.4rem 0;
     width: 100%;
 }
-label, .labels{
+.login_label, .labels{
     color: #08517A;
     font-size: 12px;
     font-weight: 600;
@@ -44,13 +65,14 @@ label, .labels{
     display: flex;
     justify-content: space-between;
 }
-.input-box{
-    padding: 0.7rem 1rem;
+.input_box{
+    padding: 0.5rem 1rem;
     border-radius: 7px; 
-    outline: none;
+    outline: none !important;
 }
 .no_border{
-    border: none;
+    border: none !important;
+    box-shadow: none !important;
 }
 .password_flex{
     display: flex;
@@ -69,7 +91,7 @@ label, .labels{
     background-color: #CACCCF;
 }
 #eye_icon{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #08517A;
     cursor: pointer;
 }
@@ -83,8 +105,8 @@ label, .labels{
 /* Lines before and after the OR word */
 .fancy span, .social span{
     color: #08517A;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 12px;
+    font-weight: 600;
 }
 p.title, span p{
     text-align: center;
@@ -120,22 +142,25 @@ p.title, span p{
     justify-content: center;
     gap: 0.9rem;
 }
-.box{
+.icon_box{
     width: 29px;
     height: 29px;
     margin-top: 0.2rem;
     border-radius: 5px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
-.box img{
-    width: 29px;
-    height: 29px;
+.icon_box img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    right: -15%;
     cursor: pointer;
 }
 .login_footer{
     text-align: center;
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 500;
 }
 .login_footer a, label + a{
     color: #DA8F06;
