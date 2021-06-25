@@ -1,0 +1,93 @@
+body, *{
+    text-decoration: none;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;   
+    margin: 0;
+    padding: 0;
+}
+.section{
+    height: 88vh;
+    background: url("../img/bg-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+.overlay:before {
+    background: rgba(1, 28, 44, 0.8);
+    content:"";
+    position: absolute;
+    height: 100%;
+    opacity: 0.8;
+    width: 100%;
+    z-index: -1;
+}
+
+.slide_bar{
+    display: flex;
+    width: 35rem;
+    height: 10rem;
+    margin-top: -4rem;
+}
+figure#info{
+    color: whitesmoke;
+    font-size: 1.2rem; 
+    position: relative;
+}
+.caption{
+    margin-top: -11px;
+    font-style: italic;
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+}
+.slide {
+    padding: 10rem 10rem 0  10rem;
+    margin-bottom: 9rem;
+}
+
+.sub_info {
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+ }
+hr#center_border{
+    height: 26vh;
+}
+
+.gallery_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40rem;
+}
+.text {
+    display: inline;
+    width: 30rem;
+    color: whitesmoke;
+    font-size: 20px;
+}
+ div.img img {
+     width: 50px;
+     height: 50px;
+     margin-right: -5rem;
+ }
+ .inline-links a{
+     color: #DA8F06 ;
+ }
+
+ /* media query for screens with heights greater than 790px: Desktop and TV */
+ @media screen and (min-height: 800px) {
+    .slide_bar{
+        height: 20rem;
+        margin-top: -2rem;
+    }
+
+    .slide {
+        margin-bottom: 8rem;
+    }
+  }
