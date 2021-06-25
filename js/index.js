@@ -41,23 +41,6 @@ function showText(e) {
     info.textContent = item.text;
   }
 
-  // show next person
-// nextBtn.addEventListener("click", function () {
-//     currentItem++;
-//     if (currentItem > slide.length - 1) {
-//       currentItem = 0;
-//     }
-//     showText(currentItem);
-//   });
-  // show prev person
-  // prevBtn.addEventListener("click", function () {
-  //   currentItem--;
-  //   if (currentItem < 0) {
-  //     currentItem = slide.length - 1;
-  //   }
-  //   showText(currentItem);
-  // });
-
   setInterval(function() {
     $("#info").html(slide[currentItem]);
     info.textContent = item.text;
