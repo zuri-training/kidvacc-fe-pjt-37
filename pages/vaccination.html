@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/vaccination.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <title>KidVacc | Vaccinations</title>
+</head>
+<body>
+
+  <!-- navbar before login starts -->
+  <nav class="before-login">
+    <div class="nav_container">
+        <div class="nav_content">
+            <img class="logo" src="/img/kv.svg" alt="">
+            <ul class="nav_links">
+            <li><a class="link" href="/index.html">Home</a></li>
+            <li><a class="link active_link" href="/pages/vaccination.html">Vaccinations</a></li>
+            <li class="dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down dropbtn"></i>
+                <div class="dropdown-content myDropdown">
+                    <a href="#">Private Hospitals</a>
+                    <div class="hospitals_border"></div>
+                    <a href="#">Public Hospitals</a>
+                </div>
+            </li>
+            <li><a class="myBtn" href="#">Search</a></li>
+            </ul>
+            <ul class="authorize">
+                <li class="authorize_login" id="click_login"><a href="#">Log In</a></li>
+                <li class="authorize_signup" id="click_signup"><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+
+        <div class="modal myModal">
+            <div class="modal_content">
+                <i class="fa fa-search"></i>
+                <input class="search" type="text" placeholder="Search With Keywords">
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navbar before login ends -->
+
+
+<!-- navbar after login starts -->
+<nav class="after-login">
+    <div class="after_nav_container">
+        <div class="after_nav_content">
+            <img class="after_logo" src="/img/kv.svg" alt="">
+            <ul class="after_nav_links">
+            <li><a class="link" href="/index.html">Home</a></li>
+            <li><a class="link active_link" href="/pages/vaccination.html">Vaccinations</a></li>
+            <li class="after_dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down after_dropbtn"></i>
+                <div class="after_dropdown-content after_myDropdown">
+                    <a href="#">Private Hospitals</a>
+                    <div class="hospitals_border"></div>
+                    <a href="#">Public Hospitals</a>
+                </div>
+            </li>
+            <li><a class="link" href="/pages/infobase.html">Infobase</a></li>
+            <li><a class="after_myBtn" href="#">Search</a></li>
+            </ul>
+            <ul class="profile">
+                <li>Hi, Tolani</li>
+                <li><a href=""><img class="profile_img" src="/img/tolani.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="after_modal after_myModal">
+            <div class="after_modal_content">
+                <i class="fa fa-search"></i>
+                <input class="after_search" type="text" placeholder="Search With Keywords">
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navbar after login ends -->
+
+
+    <div class="ren_container">
+        <h1 class="vaccination_title">VACCINATIONS</h1>
+        <p class="vaccination_sub_title">Check various vaccines and hospitals around you!</p>
+        <div class="orange_hr"></div>
+        <div class="table_container">
+            <table class="ren_table">
+                <tr>
+                  <th>Vaccine</th>
+                  <th class="vaccine_age">Age of Vaccine</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>BCG (Tuberculosis)</td>
+                  <td class="vaccine_age">Birth</td>
+                  <td class="hospitals"><a href="">Check Hospitals</a></td>
+                </tr>
+                <tr>
+                  <td>Whooping Cough</td>
+                  <td class="vaccine_age">6, 10, & 14 Weeks</td>
+                  <td class="hospitals"><a href="">Check Hospitals</a></td>
+                </tr>
+                <tr>
+                  <td>Measles</td>
+                  <td class="vaccine_age">9 Months</td>
+                  <td class="hospitals"><a href="">Check Hospitals</a></td>
+                </tr>
+                <tr>
+                  <td>Hepatitis B</td>
+                  <td class="vaccine_age">Birth, 10, & 16 Weeks</td>
+                  <td class="hospitals"><a href="">Check Hospitals</a></td>
+                </tr>
+                <tr>
+                  <td>Polio (POV)</td>
+                  <td class="vaccine_age">Birth, 6, 10, & 16 Weeks</td>
+                  <td class="hospitals"><a href="">Check Hospitals</a></td>
+                </tr>
+                <tr>
+                  <td>Yellow Fever</td>
+                  <td class="vaccine_age">9 Months</td>
+                  <td class="hospitals"><a href="">Check Hospitals</a></td>
+                </tr>
+            </table>
+        </div>
+    </div> 
+    
+    
+
+
+    <script src="/js/header.js"></script>
+</body>
+</html>
