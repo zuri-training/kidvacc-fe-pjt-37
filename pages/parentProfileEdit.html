@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/parentProfileEdit.css">
+    <title>Edit: Parent Profile</title>
+</head>
+<body>
+    <nav class="">
+    </nav>
+    <main class="parent_edit">
+        <section class="edit_section">
+            <div class="parent_col">
+                <div class="parent_img">
+                    <img src="../img/parent.svg" alt="Parent Image" id="parent_image">
+                    <img src="../img/camera.svg" alt="Camera Icon" id="camera_icon">
+                </div>
+
+                <div id="block_quote">
+                    <blockquote>
+                        A super parent is one who does all to protect their kids from diseases. Be a super parent!
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <div class="children_col">
+                <div id="parent_form">
+                    <form action="" class="parent_edit_form">
+                        <span class="input_flex">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="parent_firstname" class="input_width_height">
+                        </span>
+
+                        <span class="input_flex">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="parent_lastname" class="input_width_height">    
+                        </span>
+                        
+                       <span class="input_flex">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="parent_email" class="email_address_width">
+                       </span>
+
+                        <span class="input_flex">
+                            <label for="mobile_num">Phone Number</label>
+                            <input type="tel" name="mobile_num" id="parent_mobile" class="input_width_height">
+                        </span>
+
+                        <span class="input_flex">
+                            <label for="marital_status">Marital Status</label>
+                            <select name="marital_status" id="parent_status" class="input_width_height">
+                                <option value="select an option">select an option</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                            </select>
+                        </span>
+                        
+                        <span class="input_flex">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="parent_address" class="email_address_width">
+                        </span>
+
+                        <button type="submit" id="parent_profile_save_btn" class="parent_edit_btn">Save</button>
+                    </form>
+                </div>
+
+                <hr id="middle_border">
+
+                <div class="child_section">
+                    <h3 class="child_heading">
+                        <span class="child_parent_name"> Tolani's </span> 
+                        Child(ren)
+                    </h3>
+
+                    <div class="child_col">
+                        <div class="child_profile">
+                            <img src="../img/child_one.svg" alt="child" class="child_pix">
+                            <span class="child_info">
+                                <p class="child_name">Carol Williams</p>
+                                <p class="child_age">7 months old</p>
+                                <p class="vac_count">4 vaccines taken</p>
+                            </span>
+                        </div>
+                        
+                        <div class="child_profile">
+                            <img src="../img/child_two.svg" alt="child" class="child_pix">
+                            <span class="child_info">
+                                <p class="child_name">Kara Williams</p>
+                                <p class="child_age">19 months old</p>
+                                <p class="vac_count">4 vaccines taken</p>
+                            </span>
+                        </div>
+                        
+                        <div class="child_profile">
+                            <img src="../img/child_three.svg" alt="child" class="child_pix">
+                            <span class="child_info">
+                                <p class="child_name">Marcus Williams</p>
+                                <p class="child_age">24 months old</p>
+                                <p class="vac_count">vaccines completed!</p>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    
+                    <input type="button" value="Add a Child" id="add_child_btn" class="parent_edit_btn">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
