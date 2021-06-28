@@ -6,30 +6,34 @@
 }
 nav{
     height: 12vh;
+    background-color: indigo;
 }
 .parent_edit{
     height: 88vh;
     background-image: url("../img/bg-doctors.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 27rem;
+    background-size: 583px 431px;
     padding: 1rem 0;
 }
 .parent_col{
     display: flex;
-    align-items: center;
+    justify-content: center;
     font-size: 18px;
+    margin-bottom: 3rem;
 }
 #block_quote{
     width: 336px;
     height: 81px;
+    align-self: center;
     font-style: italic;
+    position: absolute;
+    right: 0;
 }
 .parent_img{
     text-align: center;
-    width: 53.6rem;
-    margin-right: 2rem;
-    margin-bottom: 3rem;
+    width: 20rem;
+    margin-left: -15rem;
 }
 #parent_image{
     width: 100px;
@@ -37,28 +41,29 @@ nav{
     border-radius: 100%;
 }
 #camera_icon{
-    width: 32px;
-    height: 32px;
-    margin-left: -1.2rem;
+    width: 30px;
+    height: 30px;
+    margin-left: -0.7rem;
 }
 .children_col{
     display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 #parent_form{
-    width: 150rem;
+    width: 596px;
     padding: 0;
+    margin-left: -7rem;
+    margin-right: 7rem;
 }
 .parent_edit_form{
-    width: 596px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px 36px;
     font-size: 18px;
     color: #08517A;
     margin: 0 auto;
-}
-#middle_border{
-    margin: 0 3rem 0 0;
 }
 .input_width_height{
     width: 280px;
@@ -98,7 +103,9 @@ nav{
     margin-bottom: 0.3rem;
 }
 .child_section{
-    width: 100%;
+    width: 300px;
+    position: absolute;
+    right: 0;
 }
 .child_col{
     display: flex;
