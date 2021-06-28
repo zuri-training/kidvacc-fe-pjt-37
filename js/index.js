@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 // show person based on item
-function showText(e) {
+/* function showText(e) {
     const item = slide[e];
     info.textContent = item.text;
   }
@@ -48,7 +48,7 @@ function showText(e) {
     currentItem=0;
     else
     currentItem++;
-}, 1 * 1000);
+}, 1 * 1000); */
 
 
 // LOGIN OVERLAY

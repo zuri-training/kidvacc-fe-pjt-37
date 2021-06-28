@@ -1,4 +1,4 @@
-const input = document.querySelectorAll("input");
+const input = document.querySelectorAll(".inactive");
 const show = document.querySelectorAll(".password_show");
 const pass = document.querySelectorAll(".hide")
 
