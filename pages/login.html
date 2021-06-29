@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--Fontawesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <!--main css -->
+    <link rel="stylesheet" href="../css/login.css">
+
+    <title>KidVacc | Login</title>
+</head>
+<body>
+    <section class="login_container">
+        <div class="login_box">
+            <p id="login_header">welcome back!</p>
+
+            <form action="" id="form_box">
+                <label class="login_label" for="username">Username or Email Address</label>
+                <input type="text" name="username" id="login_username" class="input-box">
+
+                <span class="labels">
+                    <label class="login_label" for="password">Password</label>
+                    <a href="#" class="forgot_pass" id="forget_password">Forgot Password?</a>
+                </span>
+               
+                <div class="password_flex">
+                    <input type="password" name="password" id="login_password" class="input-box no_border">
+                    <i class="fa fa-eye-slash" aria-hidden="true" id="eye_icon"></i>
+                </div>
+                
+                <input type="submit" value="Login" class="input-box no_border" id="submit_btn">
+            </form>
+
+            <p class="title fancy">
+                <span>OR</span>
+            </p>
+            <div class="social">
+                <span>
+                    <p>Continue with:</p>
+                </span>
+                <div class="social_icon">
+                    <div class="box">
+                        <img src="../img/google.svg" alt="Google Icon" class="social_icons" id="google">
+                    </div>
+                    <div class="box">
+                        <img src="../img/fb.svg" alt="Facebook Icon"  class="social_icons" id="fb">
+                    </div>
+                   
+                </div>
+            </div>
+
+            <p class="login_footer">Not a member? <a href="#" id="register_link">Create an account.</a href="#"></p>
+        </div>
+    </section>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

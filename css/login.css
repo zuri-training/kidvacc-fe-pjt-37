@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+body{
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+}
+/* Overlay effect styling*/
+.overlay_container{
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2;
+    cursor: pointer;
+}
+.closebtn{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    color: #000;
+    font-size: 3rem;
+    z-index: 3;
+}
+/* end of overlay effect styling */
+.login_box{
+    position: relative;
+    background-color: #FFF;
+    width: 291px;
+    height: 397px;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+p#login_header{
+    color: #08517A;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+form#form_box{
+    display: flex;
+    flex-direction: column;
+    margin: 1.4rem 0 0.4rem 0;
+    width: 100%;
+}
+.login_label, .labels{
+    color: #08517A;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+.input_box{
+    padding: 0.5rem 1rem;
+    border-radius: 7px; 
+    outline: none !important;
+}
+.no_border{
+    border: none !important;
+    box-shadow: none !important;
+}
+.password_flex{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    border-radius: 7px;
+    background-color: #CACCCF;
+    padding-right: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+#login_username{
+    margin-bottom: 1.1rem;
+}
+#login_password{
+    width: 100%;
+    background-color: #CACCCF;
+}
+#eye_icon{
+    font-size: 1rem;
+    color: #08517A;
+    cursor: pointer;
+}
+#submit_btn{
+    background-color: #DA8F06;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Lines before and after the OR word */
+.fancy span, .social span{
+    color: #08517A;
+    font-size: 12px;
+    font-weight: 400;
+}
+p.title, span p{
+    text-align: center;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    padding-top:2px;
+    border-bottom: 1px solid #E8E8E8;
+    top: 0;
+    width: 116px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.social{
+    margin: 0.5rem 0 0.6rem 0;
+}
+.social_icon{
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+}
+.icon_box{
+    width: 29px;
+    height: 29px;
+    margin-top: 0.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.icon_box img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    right: -15%;
+    cursor: pointer;
+}
+.login_footer{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.login_footer a, label + a{
+    color: #DA8F06;
+    text-decoration: none;
+}

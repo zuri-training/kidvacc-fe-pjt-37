@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.before-login {
+    font-family: 'Poppins', sans-serif;
+    height: 12vh;
+    display: block;
+}
+
+.nav_container {
+    margin: 0 140px;
+}
+
+.nav_content {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    height: 12vh;
+    width: 46%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #08517A;
+    font-weight: 500;
+}
+
+.active_link {
+    content:"";
+    max-width:120%;
+    border-bottom: 3px solid #08517A;
+    text-align: center;
+    font-weight: 700 !important;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    padding-left: 4px;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 175%;
+    background-color: #fff;
+    width:178px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    border-radius: 15px;
+    padding: 12px 17px;
+}
+
+.dropdown-content a {
+    font-size: 16px !important;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.hospitals_border {
+    background-color: #E8E8E8;
+    height: 1px;
+}
+
+.show {display:block;}
+
+.authorize {
+    display: flex;
+    list-style: none;
+    height: 12vh;
+    width: 19%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.authorize li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.authorize_login a{
+    color: #DA8F06;;
+}
+
+.authorize_signup a{
+    background: #DA8F06;
+    padding: 7px 21px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+
+.modal_content {
+    position: relative;
+    width: 552px;
+    top: 15.6%;
+    right: -41.1%;
+    transform: translate(50%, -50%);
+}
+
+.search {
+    background: #F4FBFF;
+    border: 1px solid #DA8F06;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 403px;
+    height: 37px;
+    padding-left: 37px;
+    outline: none;
+}
+
+@media screen and (max-width: 1374px) {
+
+    .modal_content {
+        position: relative;
+        width: 450px;
+        top: 15.6%;
+        right: -43.2%;
+        transform: translate(50%, -50%);
+    }
+    
+    .search {
+        width: 385px;
+    }
+    
+}
+
+
+.search::placeholder {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.753);
+}
+
+.fa-search {
+    position: relative;
+    left: 6%;
+    color:  #7B8583;
+}
+
+.fa-caret-down {
+    color: #DA8F06;
+    cursor: pointer;
+}
+
+
+
+/* NAVBAR AFTER LOGIN STARTS */
+
+.after-login {
+    font-family: 'Poppins', sans-serif;
+    height: 12vh;
+    display: none;
+}
+
+.after_nav_container {
+    margin: 0 140px;
+}
+
+.after_nav_content {
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.after_nav_links {
+    display: flex;
+    list-style: none;
+    height: 12vh;
+    width: 56%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.after_nav_links li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #08517A;
+    font-weight: 500;
+}
+
+.active_link {
+    content:"";
+    max-width:120%;
+    border-bottom: 3px solid #08517A;
+    text-align: center;
+    font-weight: 700 !important;
+}
+
+/* Dropdown Button */
+.after_dropbtn {
+    padding-left: 4px;
+}
+  
+.after_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.after_dropdown-content {
+    display: none;
+    position: absolute;
+    top: 175%;
+    background-color: #fff;
+    width:178px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    border-radius: 15px;
+    padding: 12px 17px;
+}
+
+.after_dropdown-content a {
+    font-size: 16px !important;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.hospitals_border {
+    background-color: #E8E8E8;
+    height: 1px;
+}
+
+.show {display:block;}
+
+.profile {
+    display: flex;
+    list-style: none;
+    height: 12vh;
+    width: 16%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_img {
+    border-radius: 50%;
+}
+
+.profile li {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #DA8F06;
+}
+
+.after_modal {
+    display: none;
+    position: fixed;
+    z-index: 4; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.75); 
+}
+
+.after_modal_content {
+    position: relative;
+    width: 552px;
+    top: 15.6%;
+    right: -41.1%;
+    transform: translate(50%, -50%);
+}
+
+.after_search {
+    background: #F4FBFF;
+    border: 1px solid #DA8F06;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 403px;
+    height: 37px;
+    padding-left: 37px;
+    outline: none;
+}
+
+@media screen and (max-width: 1374px) {
+
+    .after_modal_content {
+        position: relative;
+        width: 450px;
+        top: 15.6%;
+        right: -43.2%;
+        transform: translate(50%, -50%);
+    }
+    
+    .after_search {
+        width: 385px;
+    }
+    
+}
+
+
+.search::placeholder {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.753);
+}
+
+.fa-search {
+    position: relative;
+    left: 6%;
+    color:  #7B8583;
+}
+
+.fa-caret-down {
+    color: #DA8F06;
+    cursor: pointer;
+}
+
+
+
+
+  

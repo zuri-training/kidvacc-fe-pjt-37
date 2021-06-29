@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ren_container {
+    margin: 0 140px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.vaccination_title {
+    font-size: 42px;
+    font-weight: 500;
+    color: #08517A;
+    margin: 51px 0 15px;
+}
+
+.vaccination_sub_title {
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 32px;
+}
+
+.orange_hr {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color:#DA8F06;
+}
+
+.table_container {
+    margin-top: 36px;
+    margin-bottom: 50px;
+}
+
+.ren_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ren_table th {
+    text-align: start;
+    border-spacing: 0px;
+    border-style:none;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 13px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.ren_table td { 
+    border: 1px solid #E8E8E8;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    padding: 31px 0 13px;
+    font-size: 20px;
+}
+
+.vaccine_age {
+    padding-left: 6% !important;
+}
+
+.hospitals {
+    text-align: right;
+}
+
+.hospitals a {
+    text-decoration: none;
+    background-color: #DA8F06;
+    color: #fff;
+    padding: 4px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
