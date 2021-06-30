@@ -50,7 +50,6 @@ window.addEventListener("DOMContentLoaded", function () {
     currentItem++;
 }, 1 * 1000); */
 
-
 // LOGIN OVERLAY
 let closeOverlay = document.querySelector(".closebtn");
 let loginBTN = document.getElementById("click_login");

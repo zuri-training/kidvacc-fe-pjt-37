@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../css/parentProfileEdit.css">
-    <title>Edit: Parent Profile</title>
+    <title>KidVacc | Edit Parent Profile</title>
 </head>
 <body>
     <nav class="">
     </nav>
-    <main class="parent_edit">
+    <main class="parent_wrapper">
         <section class="edit_section">
             <div class="parent_col">
                 <div class="parent_img">
-                    <img src="../img/parent.svg" alt="Parent Image" id="parent_image">
+                    <img src="../img/parent.svg" alt="Parent Image" class="parent_image">
                     <img src="../img/camera.svg" alt="Camera Icon" id="camera_icon">
                 </div>
 
@@ -30,7 +30,7 @@
             <div class="children_col">
                 <div id="parent_form">
                     <form action="" class="parent_edit_form">
-                        <span class="input_flex">
+                        <span class="input_flex double_input">
                             <label for="first_name">First Name</label>
                             <input type="text" name="first_name" id="parent_firstname" class="input_width_height">
                         </span>
@@ -40,12 +40,12 @@
                             <input type="text" name="last_name" id="parent_lastname" class="input_width_height">    
                         </span>
                         
-                       <span class="input_flex">
+                       <span class="input_flex single_input">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="parent_email" class="email_address_width">
                        </span>
 
-                        <span class="input_flex">
+                        <span class="input_flex double_input">
                             <label for="mobile_num">Phone Number</label>
                             <input type="tel" name="mobile_num" id="parent_mobile" class="input_width_height">
                         </span>
@@ -60,21 +60,20 @@
                             </select>
                         </span>
                         
-                        <span class="input_flex">
+                        <span class="input_flex single_input">
                             <label for="address">Address</label>
                             <input type="text" name="address" id="parent_address" class="email_address_width">
                         </span>
 
-                        <button type="submit" id="parent_profile_save_btn" class="parent_edit_btn">Save</button>
+                        <button type="submit" id="parent_profile_save_btn" class="parent_btn">Save</button>
                     </form>
                 </div>
 
-                <hr id="middle_border">
+                <hr class="middle_border">
 
                 <div class="child_section">
                     <h3 class="child_heading">
-                        <span class="child_parent_name"> Tolani's </span> 
-                        Child(ren)
+                        <span class="child_parent_name"> Tolani's Little Ones </span>
                     </h3>
 
                     <div class="child_col">
@@ -107,7 +106,7 @@
                         
                     </div>
                     
-                    <input type="button" value="Add a Child" id="add_child_btn" class="parent_edit_btn">
+                    <input type="button" value="Add a Child" id="add_child_btn" class="parent_btn">
                 </div>
             </div>
         </section>

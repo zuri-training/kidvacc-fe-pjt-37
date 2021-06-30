@@ -95,7 +95,9 @@ hr#center_border{
  .inline-links a{
      color: #DA8F06 ;
  }
-
+.signup-wrapper a{
+    text-decoration: none;
+}
  /* media query for screens with heights greater than 790px: Desktop and TV */
  @media screen and (min-height: 800px) {
     .slide_bar{

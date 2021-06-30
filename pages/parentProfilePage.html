@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/parentProfileEdit.css">
+    <link rel="stylesheet" href="../css/parentProfilePage.css">
+    <title>KidVacc | Parent Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="parent_wrapper profile_page">
+            <div class="parent_section">
+                <div class="parent_details">
+                    <img src="../img/parent.svg" alt="Parent Image" class="profile_image">
+                    <div class="parent_detail">
+                        <p id="parent_name">Tolani Williams</p>
+                        <p id="parent_email" class="parent_basic_info">tolaniwilliams@gmail.com</p>
+                        <p class="parent_number" class="parent_basic_info">07060858432</p>
+                        <p class="parent_address" class="parent_basic_info">10B, Utopia Street, Agege, Lagos State</p>
+                    </div>
+                    <input type="button" value="Edit profile" class="parent_btn" id="parent_edit_btn">
+                </div>
+
+                <div class="parent_appointment_table">
+                    <table id="table">
+                        <caption class="table_caption">Appointments</caption>
+                        <tr>
+                            <th>Child</th>
+                            <th>Vaccine</th>
+                            <th>Hospital</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                        <tr>
+                            <td class="childname">Carol Williams</td>
+                            <td class="child_vaccine">Measles</td>
+                            <td class="appointment_hospital">St. Claire's</td>
+                            <td class="appointment_date">21/06/2021</td>
+                            <td class="appoinment_time">9:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td class="childname">Kara Williams</td>
+                            <td class="child_vaccine">Polio</td>
+                            <td class="appointment_hospital">Newlife</td>
+                            <td class="appointment_date">13/07/2021</td>
+                            <td class="appoinment_time">2:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td class="childname">Marcus Williams</td>
+                            <td class="child_vaccine">Yellow Fever</td>
+                            <td class="appointment_hospital">St. Claire's</td>
+                            <td class="appointment_date">7/06/2021</td>
+                            <td class="appoinment_time">1:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="parent_btn_div">
+                    <input type="button" value="Book Appointment" class="parent_btn" id="book_appointment_btn">
+                </div>
+            </div>
+
+            <hr class="middle_border">
+
+            <div class="children_section">
+                <h3 class="child_heading">
+                    <span class="child_parent_name"> Tolani's Little Ones</span> 
+                </h3>
+
+                <div class="child_col profile_child_col">
+                    <div class="child_profile">
+                        <img src="../img/child_one.svg" alt="child" class="child_pix">
+                        <span class="child_info">
+                            <p class="child_name">Carol Williams</p>
+                            <p class="child_age">7 months old</p>
+                            <p class="vac_count">4 vaccines taken</p>
+                        </span>
+                    </div>
+                    
+                    <div class="child_profile">
+                        <img src="../img/child_two.svg" alt="child" class="child_pix">
+                        <span class="child_info">
+                            <p class="child_name">Kara Williams</p>
+                            <p class="child_age">19 months old</p>
+                            <p class="vac_count">4 vaccines taken</p>
+                        </span>
+                    </div>
+                    
+                    <div class="child_profile">
+                        <img src="../img/child_three.svg" alt="child" class="child_pix">
+                        <span class="child_info">
+                            <p class="child_name">Marcus Williams</p>
+                            <p class="child_age">24 months old</p>
+                            <p class="vac_count">vaccines completed!</p>
+                        </span>
+                    </div>
+                    
+                </div>
+                
+                <div class="profile_add_child">
+                    <input type="button" value="Add a Child" id="add_child_btn" class="parent_btn">
+                </div>
+               
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
