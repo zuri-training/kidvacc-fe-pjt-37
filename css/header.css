@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     height: 12vh;
     display: block;
+    background-color: #F4FBFF;
 }
 
 .nav_container {
@@ -27,9 +28,12 @@ body {
     display: flex;
     list-style: none;
     height: 12vh;
-    width: 46%;
     justify-content: space-between;
     align-items: center;
+}
+
+.before_login_links {
+    width: 31%;
 }
 
 .nav_links li a {
@@ -184,6 +188,7 @@ body {
     font-family: 'Poppins', sans-serif;
     height: 12vh;
     display: none;
+    background-color: #F4FBFF;
 }
 
 .after_nav_container {

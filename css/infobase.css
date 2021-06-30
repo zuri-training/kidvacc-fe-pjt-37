@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ren_container {
+    margin: 0 140px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info_title {
+    font-size: 42px;
+    font-weight: 500;
+    color: #08517A;
+    margin: 51px 0 15px;
+}
+
+.info_sub_title {
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 32px;
+}
+
+.orange_hr {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color:#DA8F06;
+}
+
+.info_container {
+    margin-bottom: 50px;
+}
+
+.accordion {
+    color: #333;
+    background: none;
+    cursor: pointer;
+    padding: 32px 0 22px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: 1px solid #E8E8E8;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.arrow_down {
+    color: #000;
+    float: right;
+    width: 10px;
+    height: 6px;
+}
+
+/* .active {
+    background-color: #ccc;
+} */
+
+.panel {
+    padding: 0 10px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.more_info p {
+    font-size: 20px;
+    color: #333;
+}
+
+.text_area {
+    height: 83px !important;
+    width: 100% !important;
+    resize: none;
+    overflow: auto;
+    outline: none;
+    border: 1px solid #DA8F06;
+}
+
+.text_area::placeholder {
+    font-size: 14px;
+    color: #CACCCF;
+    padding: 12px 0 0 14px;
+    font-style: italic;
+}
