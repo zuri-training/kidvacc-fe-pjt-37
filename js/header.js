@@ -42,10 +42,10 @@ window.onclick = function(event) {
 
 
 /* before login dropdown */
-renDrop = document.querySelector(".dropbtn");
+/* renDrop = document.querySelector(".dropbtn");
 renDrop.addEventListener('click', () => {
   document.querySelector(".myDropdown").classList.toggle("show");
-})
+}) */
 
 
 /* after login dropdown */
