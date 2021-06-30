@@ -14,4 +14,3 @@ eyeIcon.addEventListener("click", () => {
         loginPassword.type = "password"
     }
 })
-
