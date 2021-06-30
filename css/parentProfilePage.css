@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: Poppins, sans-serif;
+}
+.profile_page{
+    height: auto !important;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0 0 0 !important;
+    padding: 0 0 3rem 0;
+}
+.parent_section{
+    width: 700px;
+}
+.parent_details{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.profile_image{
+    width: 145px;
+    height: 145px;
+    border-radius: 100%;
+}
+.profile_child_col{
+    height: 19rem !important;
+    max-height: 19rem !important;
+    overflow-y: auto;
+}
+.child_pix{
+    align-self: center;
+    width: 84px !important;
+    height: 84px !important;
+}
+#parent_name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #DA8F06;
+}
+.parent_detail{
+    font-size: 18px;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+#table {
+    border-collapse: collapse;
+}
+#table td, #table th {
+    text-align: left;
+    padding: 8px;
+}
+.table_caption{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 8px;
+}
+.parent_btn_div{
+    text-align: center;
+    margin-top: 100px;
+}
+.profile_add_child{
+    text-align: center;
+    margin-top: 68px !important;
+}
