@@ -28,7 +28,6 @@ body, *{
 
 .slide_bar{
     display: flex;
-    flex-direction: row;
     width: 45rem;
     height: 10rem;
     margin-top: -6rem;
@@ -64,7 +63,7 @@ hr#center_border{
     justify-content: flex-end;
     margin-bottom: 6rem;
     margin-right: 7rem;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .bookings button {
     font-weight: bold;
