@@ -29,7 +29,7 @@ body, *{
 .slide_bar{
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 40rem;
     height: 10rem;
     margin-top: -6rem;
 }
@@ -38,27 +38,13 @@ figure#info{
     font-size: 1.2rem; 
     position: relative;
 }
-#quote_read_more{
-    width: 103px;
-    height: 27px;
-    color: #DA8F06;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 10px;
-    cursor: pointer;
-    background-color: unset;
-    border: none;
-}
-#read_more_polygon{
-    margin-left: -2.4rem;
-}
 .caption{
-    margin-top: -11px;
+    margin-top: 0px;
     font-style: italic;
     font-size: 1rem;
     position: absolute;
     right: 0;
+    color: #DA8F06;
 }
 .slide {
     padding: 10rem 10rem 0  10rem;
