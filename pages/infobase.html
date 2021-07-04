@@ -179,64 +179,64 @@
 <!-- end of login -->
 
 <!-- signup -->
-<div class="signup-wrapper">
-    <a href="javascript:void(0)" class="closebtn">&times;</a>
-    <div class="signup_container overlay_container">
-        <div class="signup_overlay">
-            <h1>Create an Account!</h1>
-            <div class="head_border"></div>
-            <form action="">
-                <div class="form_grid">
-                    <div class="grid_item">
-                        <label class="label" for="firstName">First Name</label></br>
-                        <input class="inactive input" type="text" name="firstname">
+    <div class="signup-wrapper">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div class="signup_container overlay_container">
+            <div class="signup_overlay">
+                <h1>Create an Account!</h1>
+                <div class="head_border"></div>
+                <form action="">
+                    <div class="form_grid">
+                        <div class="grid_item">
+                            <label class="label" for="firstName">First Name</label></br>
+                            <input class="inactive input" type="text" name="firstname">
+                        </div>
+                        <div class="grid_item">
+                            <label class="label" for="lastName">Last Name</label></br>
+                            <input class="inactive input" type="text" name="lastname">
+                        </div>
+                        <div class="grid_item">
+                            <label class="label" for="email">Email Address</label></br>
+                            <input class="inactive input" type="email" name="email">
+                        </div>
+                        <div class="grid_item">
+                            <label class="label" for="phone">Phone Number</label></br>
+                            <input class="inactive input" type="phone" name="phone">
+                        </div>
+                        <div class="grid_item">
+                            <label class="label" for="password">Password</label></br>
+                            <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                        </div>
+                        <div class="grid_item">
+                            <label class="label" for="confirmPassword">Confirm Password</label></br>
+                            <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                        </div>
                     </div>
-                    <div class="grid_item">
-                        <label class="label" for="lastName">Last Name</label></br>
-                        <input class="inactive input" type="text" name="lastname">
+                    <div class="signup">
+                        <button class="signup_button">Sign Up</button>
                     </div>
-                    <div class="grid_item">
-                        <label class="label" for="email">Email Address</label></br>
-                        <input class="inactive input" type="email" name="email">
+                </form>
+                <h2><span>OR</span></h2>
+                <h3 class="alternate_signup">Continue with:</h3>
+                <div class="signup_options">
+                    <div class="box">
+                        <img src="../img/google.svg" alt="google icon">
                     </div>
-                    <div class="grid_item">
-                        <label class="label" for="phone">Phone Number</label></br>
-                        <input class="inactive input" type="phone" name="phone">
-                    </div>
-                    <div class="grid_item">
-                        <label class="label" for="password">Password</label></br>
-                        <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
-                    </div>
-                    <div class="grid_item">
-                        <label class="label" for="confirmPassword">Confirm Password</label></br>
-                        <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                    <div class="box">
+                        <img src="../img/fb.svg" alt="facebook icon">
                     </div>
                 </div>
-                <div class="signup">
-                    <button class="signup_button">Sign Up</button>
-                </div>
-            </form>
-            <h2><span>OR</span></h2>
-            <h3 class="alternate_signup">Continue with:</h3>
-            <div class="signup_options">
-                <div class="box">
-                    <img src="../img/google.svg" alt="google icon">
-                </div>
-                <div class="box">
-                    <img src="../img/fb.svg" alt="facebook icon">
-                </div>
+                <p>Already have an account? <span><a href="./login.html">Login</a></span></p>
             </div>
-            <p>Already have an account? <span><a href="./login.html">Login</a></span></p>
         </div>
     </div>
-</div>
 <!-- end of signup -->
     
     
 
 
     <script src="../js/header.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/formOverlay.js"></script>
     <script src="../js/login.js"></script>
     <script src="../js/signup.js"></script>
     <script src="../js/infobase.js"></script>
