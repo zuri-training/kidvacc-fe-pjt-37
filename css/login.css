@@ -28,7 +28,7 @@ body{
     top: 0;
     right: 0;
     padding: 0 0.5rem;
-    color: #000;
+    color: #FFF;
     font-size: 3rem;
     z-index: 3;
 }
@@ -143,6 +143,8 @@ p.title, span p{
     gap: 0.9rem;
 }
 .icon_box{
+    display: flex;
+    align-items: center;
     width: 29px;
     height: 29px;
     margin-top: 0.2rem;
@@ -152,7 +154,6 @@ p.title, span p{
 .icon_box img{
     width: 20px;
     height: 20px;
-    vertical-align: middle;
     position: relative;
     right: -15%;
     cursor: pointer;

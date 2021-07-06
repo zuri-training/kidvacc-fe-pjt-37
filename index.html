@@ -16,17 +16,17 @@
     <nav class="before-login">
         <div class="nav_container">
             <div class="nav_content">
-                <img class="logo" src="/img/kv.svg" alt="">
-                <ul class="nav_links">
+                <img class="logo" src="./img/kv.svg" alt="">
+                <ul class="nav_links before_login_links">
                 <li><a class="link active_link" href="/index.html">Home</a></li>
-                <li><a class="link" href="./pages/vaccination.html">Vaccinations</a></li>
-                <li class="dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down dropbtn"></i>
+                <li><a class="link" href="./pages/infobase.html">Infobase</a></li>
+                <!-- <li class="dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down dropbtn"></i>
                     <div class="dropdown-content myDropdown">
                         <a href="#">Private Hospitals</a>
                         <div class="hospitals_border"></div>
                         <a href="#">Public Hospitals</a>
                     </div>
-                </li>
+                </li> -->
                 <li><a class="myBtn" href="#">Search</a></li>
                 </ul>
                 <ul class="authorize">
@@ -62,7 +62,7 @@
                         <a href="#">Public Hospitals</a>
                     </div>
                 </li>
-                <li><a class="link" href="infobase.html">Infobase</a></li>
+                <li><a class="link" href="/pages/infobase.html">Infobase</a></li>
                 <li><a class="after_myBtn" href="#">Search</a></li>
                 </ul>
                 <ul class="profile">
@@ -90,16 +90,19 @@
                     <figure id="info">
                         <blockquote>
                             <span>&#8221;</span>
-                            <span class="info_text"> 
-                                Lorem ispansum dolor sit, amet consectetur adipisicing elit. 
-                                Consequatur exercitationem ducimus aut minima dolores similique reprehenderit enim esse eveniet nam numquam quia, porro deleniti? 
-                                Ad commodi odit et? Eius, neque.
+                            <span class="info_text" id="quote_text"> 
+
                             </span>
                             <span>&#8221;</span>
                         </blockquote>
-                        <figcaption class="caption">—Aldous Huxley</figcaption>
+                        <figcaption class="caption" id="caption">— <span id="author_name"> </span></figcaption>
                     </figure>
+                   
                 </div>
+            </div>
+
+            <div class="bookings">
+                <button type="submit">Book Appointment</button>
             </div>
             <!-- text scroll section end -->
             
@@ -173,7 +176,7 @@
                     </div>
                 </div>
 
-                <p class="login_footer">Not a member? <a href="#" id="register_link">Create an account.</a href="#"></p>
+                <p class="login_footer">Not a member? <a href="#" id="register_link">Create an account.</a></p>
             </div>
         </section>
     </div>
@@ -206,11 +209,13 @@
                         </div>
                         <div class="grid_item">
                             <label class="label" for="password">Password</label></br>
-                            <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                            <input class="inactive input hide" type="password" name="password"> 
+                            <img class="password_show" src="./img/show.svg" alt="">
                         </div>
                         <div class="grid_item">
                             <label class="label" for="confirmPassword">Confirm Password</label></br>
-                            <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                            <input class="inactive input hide" type="password" name="password"> 
+                            <img class="password_show" src="./img/show.svg" alt="">
                         </div>
                     </div>
                     <div class="signup">
@@ -221,10 +226,10 @@
                 <h3 class="alternate_signup">Continue with:</h3>
                 <div class="signup_options">
                     <div class="box">
-                        <img src="./img/google.svg" alt="">
+                        <img src="./img/google.svg" alt="google icon">
                     </div>
                     <div class="box">
-                        <img src="./img/fb.svg" alt="">
+                        <img src="./img/fb.svg" alt="facebook icon">
                     </div>
                 </div>
                 <p>Already have an account? <span><a href="./login.html">Login</a></span></p>
@@ -238,6 +243,7 @@
     <script src="./js/header.js"></script>
     <script src="./js/login.js"></script>
     <script src="./js/signup.js"></script>
+    <script src="./js/formOverlay.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

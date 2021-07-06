@@ -1,81 +1,42 @@
-const slide = [
-    // {
-    //     text:
-    //   "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
-    // },
-    // {
-    //     text:
-    //     "It's important for children to be vaccinated so that they have the opportunity to become adults.― Brad McKay, Fake Medicine"
-        
-    // },
-    // {
-    //     text:
-    //     "Vaccines save lives; fear endangers them. It's a simple message parents need to keep hearing.Jeffrey Kluger"
- 
-    // },
-    // {
-    //     text:
-    //   "Vaccines are a miracle; they're fantastic. Anything that makes people hesitate to give their children these vaccines according to the recommended schedule creates risk. Risk for the children who don't get vaccinated and risk for children, some of whom don't have an immune system, so they're benefiting from the fact that the community protection means the disease doesn't get to them. Bill Gates",
-    // }
-];
+const quotes = [
+    {
+      quote: "The lives of millions of children have been saved, millions have the chance of a longer healthier life, a greater chance to learn, to play, to read and write, to move around freely without suffering.",
+      author: "Nelson Mandela",
+    },
+    {
+      quote: "Vaccines are the most cost-effective health care interventions there are. A dollar spent on a childhood vaccination not only helps save a life, but greatly reduces spending on future healthcare.",
+      author: "Ezekiel Emmanuel",
+    },
+    {
+      quote: "Childhood vaccines are one of the great triumphs of modern medicine. Indeed, parents whose children are vaccinated no longer have to worry about their child's death or disability from whooping cough, polio, diphtheria, hepatitis, or a host of other infections.",
+      author: "Ezekiel Emmanuel",
+    },
+    {
+      quote: "Vaccination is one of the best things that has happened to civilization. Empires toppled like sand castles in the wake of diseases we do not give a second thought to today.",
+      author: "Jennifer Wright",
+    },
+    {
+      quote: "Vaccines are one of our most important tools for preventing outbreaks and keeping the world safe,” “While most children today are being vaccinated, far too many are left behind. Unacceptably, it’s often those who are most at risk– the poorest, the most marginalized, those touched by conflict or forced from their homes - who are persistently missed.",
+      author: "Dr Tedros Adhanom Ghebreyesus"
+    },
+]
 
-const info = document.getElementById("info");
+let sliderIndex = 0; // initial value of the Slider Index;
 
-const prevBtn = document.querySelector(".prev_btn");
-const nextBtn = document.querySelector(".next_btn");
+let displayQuote = () => {
+  let quoteTextContainer = document.getElementById("quote_text");
+  let authorName = document.getElementById("author_name");
 
-// set starting item
-let currentItem = 0;
-
-// load initial item
-window.addEventListener("DOMContentLoaded", function () {
-  currentItem++;
-  const item = slide[currentItem];
-  info.textContent = item.text;
-  setInterval(currentItem);
-});
-
-// show person based on item
-/* function showText(e) {
-    const item = slide[e];
-    info.textContent = item.text;
+  sliderIndex++;
+  if ( sliderIndex > quotes.length ) {
+    sliderIndex = 1
   }
+  quoteTextContainer.textContent = quotes[sliderIndex-1].quote;
+  authorName.textContent = quotes[sliderIndex-1].author
 
-  setInterval(function() {
-    $("#info").html(slide[currentItem]);
-    info.textContent = item.text;
-    if (currentItem == slide.length)
-    currentItem=0;
-    else
-    currentItem++;
-}, 1 * 1000); */
-
+  setTimeout(displayQuote, 5000); 
+}
+displayQuote(); 
+// END OF QUOTE SLIDER REGION
 
 // LOGIN OVERLAY
-let closeOverlay = document.querySelector(".closebtn");
-let loginBTN = document.getElementById("click_login");
-let loginContainer = document.getElementById("login_container");
-
-let signupBTN = document.getElementById("click_signup");
-let signupContainer = document.querySelector(".signup_container");
-
-loginBTN.addEventListener("click", () => {
-  loginContainer.style.display = "flex";
-  closeOverlay.style.display = "block"
-})
-closeOverlay.addEventListener("click", () => {
-  loginContainer.style.display = "none";
-  closeOverlay.style.display = "none";
-})
-// END OF LOGIN OVERLAY
-
-// SIGNUP OVERLAY
-signupBTN.addEventListener("click", () => {
-  signupContainer.style.display = "flex";
-  closeOverlay.style.display = "block"
-})
-closeOverlay.addEventListener("click", () => {
-  signupContainer.style.display = "none";
-  closeOverlay.style.display = "none";
-})
-// END OF SIGNUP OVERLAY

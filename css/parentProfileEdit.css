@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ nav{
     height: 12vh;
     background-color: indigo;
 }
-.parent_edit{
+.parent_wrapper{
     height: 88vh;
     background-image: url("../img/bg-doctors.svg");
     background-repeat: no-repeat;
@@ -20,7 +21,7 @@ nav{
     display: flex;
     justify-content: center;
     font-size: 18px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 #block_quote{
     width: 336px;
@@ -28,14 +29,14 @@ nav{
     align-self: center;
     font-style: italic;
     position: absolute;
-    right: 0;
+    right: 20px;
 }
 .parent_img{
     text-align: center;
     width: 20rem;
-    margin-left: -15rem;
+    margin-left: -13rem;
 }
-#parent_image{
+.parent_image{
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -60,10 +61,15 @@ nav{
 .parent_edit_form{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px 36px;
     font-size: 18px;
     color: #08517A;
     margin: 0 auto;
+}
+.double_input{
+    margin-right: 36px
+}
+.single_input{
+    margin: 15px 0;
 }
 .input_width_height{
     width: 280px;
@@ -88,7 +94,7 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.parent_edit_btn{
+.parent_btn{
     width: 228px;
     height: 40px;
     font-weight: bold;
@@ -96,7 +102,7 @@ nav{
     background-color: #DA8F06;
     border: none;
     border-radius: 5px;
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto 1rem auto;
     cursor: pointer;
 }
 .input_flex label{
@@ -110,16 +116,18 @@ nav{
 .child_col{
     display: flex;
     flex-direction: column;
-    row-gap: 0.3rem;
     height: 17.8rem;
     max-height: 17.8rem;
     overflow-y: auto;
+    margin-bottom: 1rem;
 }
 .child_profile{
     display: flex;
     align-content: center;
     width: 100%;
-    column-gap: 20px;
+}
+.child_profile:not(:last-child){
+    margin-bottom: 20px;
 }
 .child_heading{
     margin: 0 0 1rem 2rem;
@@ -128,6 +136,7 @@ nav{
     align-self: center;
     width: 60px;
     height: 60px;
+    margin-right: 20px;
 }
 .child_info{
     display: flex;
@@ -142,3 +151,13 @@ nav{
     color: #DA8F06;
     font-weight: bold;
 }
+
+@media screen and (min-height: 800px) {
+    .parent_wrapper{
+        margin: 103px 0 0 0;
+    }
+    .parent_image{
+        width: 145px;
+        height: 145px;
+    }
+  }
