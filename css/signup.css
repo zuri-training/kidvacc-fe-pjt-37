@@ -120,6 +120,8 @@ h2 span {
 }
 
 .box {
+    display: flex;
+    align-items: center;
     width: 29px;
     height: 29px;
     border-radius: 5px;
@@ -129,7 +131,6 @@ h2 span {
 .box img {
     width: 20px;
     height: 20px;
-    vertical-align: middle;
     position: relative;
     right: -15%;
     cursor: pointer;
