@@ -45,7 +45,11 @@
     border: 2px solid #DA8F06;
 }
 
-.main_area {
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150vh;
+    justify-content: space-around;
 }
 
 
@@ -112,4 +116,10 @@
 
 .appointment a {
     color: ivory;
+}
+
+@media only screen and (min-width : 1250px) {
+    .hospital{
+        margin: 1rem;
+    }
 }

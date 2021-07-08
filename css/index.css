@@ -63,7 +63,7 @@ hr#center_border{
     justify-content: flex-end;
     margin-bottom: 6rem;
     margin-right: 7rem;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .bookings button {
     font-weight: bold;
@@ -111,3 +111,82 @@ hr#center_border{
         margin-bottom: 12rem;
     }
   }
+
+
+  @media only screen and (min-width : 800px) and (max-width : 1200px) {
+      .section {
+          height: 150vh;
+      }
+      /* .slide {
+        margin-left: 2rem;
+        display: block;
+      } */
+
+      .slide_bar {
+          /* display: inline; */
+          margin-left: -8rem;
+      }
+
+      .bookings {
+          margin-left: 2rem;
+          display: block;
+      }
+
+      #center_border {
+          display: none;
+      }
+
+      .sub_info {
+          display: block;
+      }
+
+      .gallery_img {
+        display: block;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        height: 200px;
+        width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .section {
+        height: 180vh;
+    }
+    
+    #info {
+        overflow: auto;
+        height: 15rem;
+        width: 25rem;
+        margin-left: -8rem;
+        margin-top: -6rem;
+
+    }
+
+    .slide_bar {
+        display: inline;
+        margin-left: -8rem;
+
+    }
+
+    .bookings {
+        margin-left: 2rem;
+        display: block;
+    }
+
+    #center_border {
+        display: none;
+    }
+
+    .sub_info {
+        display: block;
+    }
+
+    .gallery_img {
+        display: inline-block;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        height: 200px;
+        width: 300px;
+    }
+}

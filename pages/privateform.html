@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Private Hospital Forms</title>
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
   <link href="../css/privateform.css" rel="stylesheet">
  </head>
@@ -26,14 +27,21 @@
                         <a href="#">Public Hospitals</a>
                     </div>
                 </li> -->
-                <li><a class="myBtn" href="#">Search</a></li>
+
             </ul>
+            <ul class="search" >
+                <li type="none">
+                    <a class="myBtn" href="#">Search</a>
+                </li>
+             </ul>  
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
             <ul class="authorize">
                 <li class="authorize_login" id="click_login"><a href="#">Log In</a></li>
                 <li class="authorize_signup" id="click_signup"><a href="#">Sign Up</a></li>
             </ul>
         </div>
-
         <div class="modal myModal">
             <div class="modal_content">
                 <i class="fa fa-search"></i>
@@ -79,6 +87,19 @@
     </div>
 </nav>
 <!-- navbar after login ends -->
+<!-- responsive nav -->
+<nav class="responsive_nav">
+    <ul class="icon_links ">
+        <li><a class="link active_link" href="/index.html">Home</a></li>
+        <li><a class="link" href="./pages/infobase.html">Infobase</a></li>
+        <li class="authorize_login" id="nav_login"><a href="#">Log In</a></li>
+        <li class="authorize_signup" id="nav_signup"><a href="#">Sign Up</a></li>
+    </ul>
+</nav>
+
+<!-- navbar ends here -->
+
+<!-- main contents -->
     <header class="masthead">
         <div class="hospital_header">
             <p> PRIVATE HOSPITALS</p>
@@ -168,6 +189,8 @@
 
         </div>
       <!-- </div> -->
+      <script src="../js/header.js"></script>
+
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     <title>Kidvacc : Private Hospital</title>
     <meta name="description" content="Flexible box hospital layout" />
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
     <link rel="stylesheet" href="../css/privatehospital.css" type="text/css">
    
@@ -20,7 +21,7 @@
                 <img class="logo" src="../img/kv.svg" alt="logo">
                 <ul class="nav_links before_login_links">
                     <li><a class="link" href="../index.html">Home</a></li>
-                    <li><a class="link active_link" href="/pages/privatehospital.html">Hospital List</a></li>
+                    <li><a class="link active_link" href="/pages/privatehospital.html">Hospitals</a></li>
                     <!-- <li class="dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down dropbtn"></i>
                         <div class="dropdown-content myDropdown">
                             <a href="#">Private Hospitals</a>
@@ -28,8 +29,16 @@
                             <a href="#">Public Hospitals</a>
                         </div>
                     </li> -->
-                    <li><a class="myBtn" href="#">Search</a></li>
+
                 </ul>
+                <ul class="search" >
+                    <li type="none">
+                        <a class="myBtn" href="#">Search</a>
+                    </li>
+                 </ul>  
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                  </button>
                 <ul class="authorize">
                     <li class="authorize_login" id="click_login"><a href="#">Log In</a></li>
                     <li class="authorize_signup" id="click_signup"><a href="#">Sign Up</a></li>
@@ -81,6 +90,17 @@
         </div>
     </nav>
     <!-- navbar after login ends -->
+     <!-- responsive nav -->
+     <nav class="responsive_nav">
+        <ul class="icon_links ">
+            <li><a class="link active_link" href="/index.html">Home</a></li>
+            <li><a class="link" href="./pages/infobase.html">Infobase</a></li>
+            <li class="authorize_login" id="nav_login"><a href="#">Log In</a></li>
+            <li class="authorize_signup" id="nav_signup"><a href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!-- navbar ends here -->
 
 
     <header class="masthead">
@@ -96,9 +116,7 @@
     
     <main class="main_area">
         
-        <div class="">
-
-            <section class="hospitals">
+        <div class="group">
                 
                 <article class="hospital">
                     <div class="centered">
@@ -112,7 +130,7 @@
                             <a href="../pages/privateform.html">Book Appointment</a>
                         </button>
                     </div>
-                </article><!-- .card -->
+                </article>
 
                 <article class="hospital">
                     <div class="centered">
@@ -155,8 +173,7 @@
                         </button>
                     </div>
                 </article>
-            </section>
-            <section class="hospitals">
+     
                 <article class="hospital">
                     <div class="centered">
                         <h1 class="hospital_name">
@@ -211,13 +228,12 @@
                         </button>
                     </div>
                 </article>
-
-            </section><!-- .hospitals -->
            
-        </div><!-- .centered -->
+        </div>
         
     </main>
-    
+        <script src="../js/header.js"></script>
+
 </body>
 
 </html>
