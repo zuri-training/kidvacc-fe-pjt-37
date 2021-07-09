@@ -23,6 +23,44 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+/* responsive links */
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #DA8F06;
+    background: transparent;
+    border-color: transparent;
+    transition: 2s;
+    cursor: pointer;
+    display: none;
+  }
+  .nav-toggle:hover {
+    color: #DA8F06;
+    transform: rotate(90deg);
+  }
+
+  .icon_links a {
+    color: rgb(110, 110, 163);
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: 2s;
+  }
+  .icon_links a:hover {
+    background:  #DA8F06;
+    color: #08517A;
+    padding-left: 1.5rem;
+  }
+  .icon_links {
+    height: 0;
+    overflow: hidden;
+    transition: 2s;
+  }
+  .show_links {
+    height: 10rem;
+  }
+
+  /* responsive link ends here */
 
 .nav_links {
     display: flex;
@@ -31,7 +69,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+.search li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #08517A;
+    font-weight: 500;
+}
 .before_login_links {
     width: 31%;
 }
@@ -103,7 +146,7 @@ body {
 }
 
 .authorize_login a{
-    color: #DA8F06;;
+    color: #DA8F06;
 }
 
 .authorize_signup a{
@@ -350,6 +393,71 @@ body {
 }
 
 
+@media only screen and (min-width : 1100px) and (max-width : 1400px) {
+    .nav_container {
+        margin: 0px 1rem;
+    }
+    .active_link{
+        margin-left: 10rem;
+    }
+      .nav_links {
+        display: flex;
+    }
+    .authorize {
+        display: flex;
+    }
+    .icon_links {
+        height: 0;
+        overflow: hidden;
+      }
+}
+/* ==media query== */
 
+@media screen and (max-width: 1100px) {
+    .nav-toggle {
+        display: block;
+      }
+      .nav_links {
+        display: none;
+    }
+    .authorize {
+        display: none;
+    }
+    .active_link {
+        content:"";
+        max-width:120%;
+        border-bottom: 3px solid #08517A;
+        text-align: start;
+        font-weight: 700 !important;
+    }
+    .nav_container {
+        margin: 0px 1rem;
+    }
+    .search {
+        width: 120px;
+        margin-right: 3rem;
+    }
+    .modal_content {
+        position: relative;
+        width: 450px;
+        top: 15.6%;
+        right: 15.2%;
+        transform: translate(50%, -50%);
+    }
+    .modal_content .search{
+        width: 250px;
+    }
+    .password_show {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .password_show {
+        display: inline;
+        margin-left: 14rem;
+        top: -45px;
+        right: 15.2%;    }
+}
 
   

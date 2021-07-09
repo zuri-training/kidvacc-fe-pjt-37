@@ -5,10 +5,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Child</title>
+  <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/infobase.css"> -->
   <link href="../css/addchihld.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
  </head>
 
 <body>
+   <!-- navbar before login starts -->
+   <nav class="before-login">
+    <div class="nav_container">
+        <div class="nav_content">
+            <img class="logo" src="../img/kv.svg" alt="logo">
+            <ul class="nav_links before_login_links">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link active_link" href="/pages/addchild.html">Add Child</a></li>
+                <!-- <li class="dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down dropbtn"></i>
+                    <div class="dropdown-content myDropdown">
+                        <a href="#">Private Hospitals</a>
+                        <div class="hospitals_border"></div>
+                        <a href="#">Public Hospitals</a>
+                    </div>
+                </li> -->
+
+            </ul>
+            <ul class="search" >
+              <li type="none">
+                  <a class="myBtn" href="#">Search</a>
+              </li>
+           </ul>  
+          <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          <ul class="authorize">
+              <li class="authorize_login" id="click_login"><a href="#">Log In</a></li>
+              <li class="authorize_signup" id="click_signup"><a href="#">Sign Up</a></li>
+          </ul>
+      
+        </div>
+
+        <div class="modal myModal">
+            <div class="modal_content">
+                <i class="fa fa-search"></i>
+                <input class="search" type="text" placeholder="Search With Keywords">
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navbar before login ends -->
+
+
+
+<!-- navbar after login starts -->
+<nav class="after-login">
+    <div class="after_nav_container">
+        <div class="after_nav_content">
+            <img class="after_logo" src="/img/kv.svg" alt="">
+            <ul class="after_nav_links">
+            <li><a class="link" href="/index.html">Home</a></li>
+            <li><a class="link" href="/pages/vaccination.html">Vaccinations</a></li>
+            <li class="after_dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down after_dropbtn"></i>
+                <div class="after_dropdown-content after_myDropdown">
+                    <a href="#">Private Hospitals</a>
+                    <div class="hospitals_border"></div>
+                    <a href="#">Public Hospitals</a>
+                </div>
+            </li>
+            <li><a class="link active_link" href="/pages/addchild.html">Add Child</a></li>
+            <li><a class="after_myBtn" href="#">Search</a></li>
+            </ul>
+            <ul class="profile">
+                <li>Hi, Tolani</li>
+                <li><a href=""><img class="profile_img" src="/img/tolani.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="after_modal after_myModal">
+            <div class="after_modal_content">
+                <i class="fa fa-search"></i>
+                <input class="after_search" type="text" placeholder="Search With Keywords">
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navbar after login ends -->
+ <!-- responsive nav -->
+ <nav class="responsive_nav">
+  <ul class="icon_links ">
+      <li><a class="link active_link" href="/index.html">Home</a></li>
+      <li><a class="link" href="./pages/infobase.html">Infobase</a></li>
+      <li class="authorize_login" id="nav_login"><a href="#">Log In</a></li>
+      <li class="authorize_signup" id="nav_signup"><a href="#">Sign Up</a></li>
+  </ul>
+</nav>
+
+<!-- navbar ends here -->
+
+<!-- main content -->
   <main class="container overlay">
 
     <div class="wrapper">
@@ -38,32 +135,32 @@
               <label>Date of birth</label>
             </div>
             <div class="date_box">
-              <input type="text" placeholder="DD" class="input">
-              <input type="text" placeholder="MM" class="input">
-              <input type="text" placeholder="YYY" class="input">
+              <input type="text" placeholder="DD" class="name">
+              <input type="text" placeholder="MM" class="name">
+              <input type="text" placeholder="YYY" class="name">
             </div>
           </div>
           
-          <div class="other_info">
+          <!-- <div class="other_info"> -->
 
-            <div class="Gender">
-              <div class="title">
-                <label>Gender</label>
-              </div>
-              <div>
-                <select id="" name="" class="input">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
+            <div class="identity">
+                <div class="names">
+                  <label class="title">Gender</label>
+                </div>
+                <div>
+                  <select id="" name="" class="name">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
             </div>
 
-            <div class="Genotype">
-              <div class="title">
-                <label>Genotype</label>
+            <div class="identity">
+              <div class="names">
+                <label class="title">Genotype</label>
               </div>
               <div>
-                <select id="genotype" name="" class="input">
+                <select id="genotype" name="" class="name">
                   <option value=""> AA</option>
                   <option value="">AO </option>
                   <option value=""> BB</option>
@@ -74,12 +171,12 @@
               </div>
             </div>
 
-            <div class="blood_group">
+            <div class="identity">
               <div class="title">
                 <label>Blood_group</label>
               </div>
               <div>
-                <select id="blood_group" name="" class="input">
+                <select id="blood_group" name="" class="name">
                   <option value="">A</option>
                   <option value="">B </option>
                   <option value="">AB </option>
@@ -88,7 +185,7 @@
               </div>
             </div>
 
-          </div>
+          <!-- </div> -->
 
           <div class="DOB">
             <div class="title">
@@ -112,6 +209,8 @@
         </div>
       <!-- </div> -->
   </main>
+  <script src="../js/header.js"></script>
+
 </body>
 
 </html>
