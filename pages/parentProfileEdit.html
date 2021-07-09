@@ -5,12 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/parentProfileEdit.css">
     <title>KidVacc | Edit Parent Profile</title>
 </head>
 <body>
-    <nav class="">
-    </nav>
+    <header>
+        <!-- navbar after login starts -->
+            <nav class="after-login">
+                <div class="after_nav_container">
+                    <div class="after_nav_content">
+                        <img class="after_logo" src="../img/kv.svg" alt="">
+                        <ul class="after_nav_links">
+                        <li><a class="link active_link" href="../index.html">Home</a></li>
+                        <li><a class="link" href="vaccination.html">Vaccinations</a></li>
+                        <li class="after_dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down after_dropbtn"></i>
+                            <div class="after_dropdown-content after_myDropdown">
+                                <a href="#">Private Hospitals</a>
+                                <div class="hospitals_border"></div>
+                                <a href="#">Public Hospitals</a>
+                            </div>
+                        </li>
+                        <li><a class="link" href="infobase.html">Infobase</a></li>
+                        <li><a class="after_myBtn" href="#">Search</a></li>
+                        </ul>
+                        <ul class="profile">
+                            <li>Hi, Tolani</li>
+                            <li><a href=""><img class="profile_img" src="../img/tolani.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="after_modal after_myModal">
+                        <div class="after_modal_content">
+                            <i class="fa fa-search"></i>
+                            <input class="after_search" type="text" placeholder="Search With Keywords">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        <!-- navbar after login ends -->
+    </header>
+
+
     <main class="parent_wrapper">
         <section class="edit_section">
             <div class="parent_col">
@@ -111,7 +147,6 @@
             </div>
         </section>
     </main>
-
 
 
 
