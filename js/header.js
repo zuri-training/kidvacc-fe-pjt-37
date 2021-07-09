@@ -53,3 +53,16 @@ afterRenDrop = document.querySelector(".after_dropbtn");
 afterRenDrop.addEventListener('click', () => {
   document.querySelector(".after_myDropdown").classList.toggle("show");
 })
+
+// RESPONSIVE NAVBAR
+let menuBar = document.getElementById("click_menubar");
+
+menuBar.addEventListener("click", ()=> {
+  document.querySelectorAll(".navbar_items").forEach( element => {
+    if(element.style.display === "none"){
+      element.style.display = "block"
+    } else{
+      element.style.display = "none"
+    }
+  })
+})
