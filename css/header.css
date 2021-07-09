@@ -187,7 +187,7 @@ body {
 .after-login {
     font-family: 'Poppins', sans-serif;
     height: 12vh;
-    display: none;
+    display: flex;
     background-color: #F4FBFF;
 }
 

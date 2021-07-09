@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
-nav{
+.after-login {
+    font-family: 'Poppins', sans-serif;
     height: 12vh;
-    background-color: indigo;
+    display: block;
+    background-color: #F4FBFF;
 }
 .parent_wrapper{
     height: 88vh;

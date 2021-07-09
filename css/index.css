@@ -10,7 +10,7 @@ body, *{
     background: url("../img/bg-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
-   background-size: cover;
+     background-size: cover;
 }
 .overlay {
     position: relative;
@@ -102,7 +102,7 @@ hr#center_border{
     text-decoration: none;
 }
  /* media query for screens with heights greater than 790px: Desktop and TV */
- @media screen and (min-height: 800px) {
+@media screen and (min-height: 800px) {
     .slide_bar{
         height: 10rem;
         margin-top: -2rem;
@@ -111,3 +111,4 @@ hr#center_border{
         margin-bottom: 12rem;
     }
   }
+

@@ -52,10 +52,10 @@
     <nav class="after-login">
         <div class="after_nav_container">
             <div class="after_nav_content">
-                <img class="after_logo" src="/img/kv.svg" alt="">
+                <img class="after_logo" src="../img/kv.svg" alt="logo">
                 <ul class="after_nav_links">
-                <li><a class="link" href="/index.html">Home</a></li>
-                <li><a class="link" href="/pages/vaccination.html">Vaccinations</a></li>
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="vaccination.html">Vaccinations</a></li>
                 <li class="after_dropdown"><a href="#">Hospitals</a><i class="fa fa-caret-down after_dropbtn"></i>
                     <div class="after_dropdown-content after_myDropdown">
                         <a href="#">Private Hospitals</a>
@@ -63,12 +63,12 @@
                         <a href="#">Public Hospitals</a>
                     </div>
                 </li>
-                <li><a class="link active_link" href="/pages/infobase.html">Infobase</a></li>
+                <li><a class="link active_link" href="infobase.html">Infobase</a></li>
                 <li><a class="after_myBtn" href="#">Search</a></li>
                 </ul>
                 <ul class="profile">
                     <li>Hi, Tolani</li>
-                    <li><a href=""><img class="profile_img" src="/img/tolani.svg" alt=""></a></li>
+                    <li><a href=""><img class="profile_img" src="../img/tolani.svg" alt=""></a></li>
                 </ul>
             </div>
 
@@ -126,6 +126,7 @@
             <div class="more_info">
                 <p>More Questions?</p>
                 <textarea class="text_area" placeholder="Type your question here..." name="" ></textarea>
+                <button type="submit" id="more_question_btn">Submit</button>
             </div>
         </div>
     </div> 
@@ -138,8 +139,14 @@
                 <p id="login_header">welcome back!</p>
 
                 <form action="" id="form_box">
-                    <label class="login_label" for="username">Username or Email Address</label>
-                    <input type="text" name="username" id="login_username" class="input_box">
+                    <!-- <label class="login_label" for="username">Username or Email Address</label>
+                    <input type="text" name="username" id="login_username" class="input_box"> -->
+
+                    <label class="login_label" for="username">Username</label>
+                    <input class="input_box" type="text" name="username" id="login_username" required>
+                    
+                    <!-- <label class="login_label" for="email">Email</label>
+                    <input class="input_box" type="email" name="username" id="login_email" required> -->
 
                     <span class="labels">
                         <label class="login_label" for="password">Password</label>
@@ -147,7 +154,7 @@
                     </span>
                 
                     <div class="password_flex">
-                        <input type="password" name="password" id="login_password" class="input_box no_border">
+                        <input type="password" name="password" id="login_password" class="input_box no_border" required>
                         <i class="fa fa-eye-slash" aria-hidden="true" id="eye_icon"></i>
                     </div>
                     
@@ -187,35 +194,44 @@
                 <div class="head_border"></div>
                 <form action="">
                     <div class="form_grid">
-                        <div class="grid_item">
+                        <!-- <div class="grid_item">
                             <label class="label" for="firstName">First Name</label></br>
-                            <input class="inactive input" type="text" name="firstname">
-                        </div>
-                        <div class="grid_item">
+                            <input class="inactive input" type="text" name="firstname" id="signup_firstname">
+                        </div> -->
+                        <!-- <div class="grid_item">
                             <label class="label" for="lastName">Last Name</label></br>
-                            <input class="inactive input" type="text" name="lastname">
+                            <input class="inactive input" type="text" name="lastname" id="signup_lastname">
+                        </div> -->
+
+                        <div class="grid_item">
+                            <label class="label" for="username">Username</label></br>
+                            <input class="inactive input" type="text" name="username" id="signup_username">
                         </div>
+
                         <div class="grid_item">
                             <label class="label" for="email">Email Address</label></br>
-                            <input class="inactive input" type="email" name="email">
+                            <input class="inactive input" type="email" name="email" id="signup_email">
                         </div>
-                        <div class="grid_item">
+                        <!-- <div class="grid_item">
                             <label class="label" for="phone">Phone Number</label></br>
-                            <input class="inactive input" type="phone" name="phone">
-                        </div>
+                            <input class="inactive input" type="phone" name="phone" id="signup_phone">
+                        </div> -->
                         <div class="grid_item">
                             <label class="label" for="password">Password</label></br>
-                            <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                            <input class="inactive input hide" type="password" name="password" id="signup_password1"> 
+                            <img class="password_show" src="../img/show.svg" alt="">
                         </div>
                         <div class="grid_item">
                             <label class="label" for="confirmPassword">Confirm Password</label></br>
-                            <input class="inactive input hide" type="password" name="password"> <img class="password_show" src="../img/show.svg" alt="">
+                            <input class="inactive input hide" type="password" name="password" id="signup_password2"> 
+                            <img class="password_show" src="../img/show.svg" alt="">
                         </div>
                     </div>
                     <div class="signup">
-                        <button class="signup_button">Sign Up</button>
+                        <button class="signup_button" id="signup_button">Sign Up</button>
                     </div>
                 </form>
+
                 <h2><span>OR</span></h2>
                 <h3 class="alternate_signup">Continue with:</h3>
                 <div class="signup_options">
@@ -234,7 +250,7 @@
     
     
 
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/formOverlay.js"></script>
     <script src="../js/login.js"></script>

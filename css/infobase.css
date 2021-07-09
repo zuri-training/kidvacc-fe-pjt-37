@@ -82,6 +82,7 @@ body {
     overflow: auto;
     outline: none;
     border: 1px solid #DA8F06;
+    padding: 0.5rem;
 }
 
 .text_area::placeholder {
@@ -89,4 +90,13 @@ body {
     color: #CACCCF;
     padding: 12px 0 0 14px;
     font-style: italic;
+}
+#more_question_btn{
+    padding: 0.5rem;
+    border: none;
+    color: #FFF;
+    background-color: #08517A;
+    border-radius: 5px;
+    margin-top: 0.7rem;
+    cursor: pointer;
 }
