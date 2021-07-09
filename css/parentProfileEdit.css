@@ -6,10 +6,7 @@
     font-family: Poppins, sans-serif;
 }
 .after-login {
-    font-family: 'Poppins', sans-serif;
-    height: 12vh;
     display: block;
-    background-color: #F4FBFF;
 }
 .parent_wrapper{
     height: 88vh;
