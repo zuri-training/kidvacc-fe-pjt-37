@@ -63,3 +63,59 @@
     text-align: center;
     margin-top: 68px !important;
 }
+
+@media screen and (min-height: 800px) {
+    .parent_wrapper{
+        margin: 103px 0 0 0;
+    }
+    .parent_image{
+        width: 145px;
+        height: 145px;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .parent_wrapper{
+        display: block;
+    }
+   
+    .parent_details {
+        margin: 0 15rem;
+        text-align: start;
+
+    }
+    .parent_detail{
+        margin: -20px;
+    }
+
+    .parent_appointment_table {
+        margin: 5rem;
+    }
+    .children_section {
+        margin: 5rem;
+    }
+    br {
+        display: none;
+    }
+  }
+
+@media screen and (max-width: 600px){
+    .parent_wrapper{
+        display: block;
+    }
+   
+    .parent_details {
+        margin: 0 5rem;
+        text-align: start;
+
+    }
+    .parent_detail{
+        margin: -20px;
+    }
+    .parent_appointment_table {
+        margin: 1rem;
+    }
+    .children_section {
+        margin: 1rem;
+    }
+}
