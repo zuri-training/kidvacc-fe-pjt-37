@@ -43,13 +43,13 @@ body {
     font-weight: 500;
 }
 
-/* .active_link {
+.active_link {
     content:"";
     max-width:120%;
     border-bottom: 3px solid #08517A;
     text-align: center;
     font-weight: 700 !important;
-} */
+}
 
 /* Dropdown Button */
 .dropbtn {
@@ -396,6 +396,12 @@ body {
     .authorize_signup a:hover{
         background-color: #E8E8E8;
         color: #DA8F06;
+    }
+
+    .active_link {
+        content:"";
+        border-bottom: none;
+        font-weight: 700 !important;
     }
 
 }
