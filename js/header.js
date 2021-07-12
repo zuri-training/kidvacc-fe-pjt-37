@@ -52,20 +52,17 @@ renDrop.addEventListener('click', () => {
 afterRenDrop = document.querySelector(".after_dropbtn");
 afterRenDrop.addEventListener('click', () => {
   document.querySelector(".after_myDropdown").classList.toggle("show");
-});
+})
 
+// RESPONSIVE NAVBAR
+let menuBar = document.getElementById("click_menubar");
 
-const navToggle = document.querySelector(".nav-toggle");
-const iconLinks = document.querySelector(".icon_links");
-
-navToggle.addEventListener("click", function () {
-  // console.log(links.classList);
-  // console.log(links.classList.contains("random"));
-  // console.log(links.classList.contains("links"));
-  // if (links.classList.contains("show-links")) {
-  //   links.classList.remove("show-links");
-  // } else {
-  //   links.classList.add("show-links");
-  // }
-  iconLinks.classList.toggle("show_links");
-});
+menuBar.addEventListener("click", ()=> {
+  document.querySelectorAll(".navbar_items").forEach( element => {
+    if(element.style.display === "none"){
+      element.style.display = "block"
+    } else{
+      element.style.display = "none"
+    }
+  })
+})

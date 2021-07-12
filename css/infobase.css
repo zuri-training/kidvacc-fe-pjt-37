@@ -35,6 +35,7 @@ body {
 
 .info_container {
     margin-bottom: 50px;
+    padding: 0 1rem;
 }
 
 .accordion {
@@ -82,6 +83,7 @@ body {
     overflow: auto;
     outline: none;
     border: 1px solid #DA8F06;
+    padding: 0.5rem;
 }
 
 .text_area::placeholder {
@@ -90,3 +92,55 @@ body {
     padding: 12px 0 0 14px;
     font-style: italic;
 }
+#more_question_btn{
+    padding: 0.5rem;
+    border: none;
+    color: #FFF;
+    background-color: #08517A;
+    border-radius: 5px;
+    margin-top: 0.7rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    .ren_container {
+        margin: 0;
+        padding-top: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info_title {
+        padding: 0 1rem;
+        margin: 0;
+    }
+    
+    .info_sub_title {
+        padding: 0 1rem;
+        margin: 0;
+    }
+    
+    .info_container {
+        margin-bottom: 3rem;
+    }
+    
+    .accordion {
+        color: #333;
+        background: none;
+        cursor: pointer;
+        padding: 32px 0 22px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        border-bottom: 1px solid #E8E8E8;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text_area::placeholder {
+        padding: 0.5rem 0 0 0.5rem;
+    }
+}
+
+

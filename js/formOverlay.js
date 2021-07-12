@@ -14,11 +14,11 @@ let signupContainer = document.querySelector(".signup_container");
 loginBTN.addEventListener("click", () => {
   loginContainer.style.display = "flex";
   closeOverlay.style.display = "block"
-});
+})
 closeOverlay.addEventListener("click", () => {
   loginContainer.style.display = "none";
   closeOverlay.style.display = "none";
-});
+})
 // END OF LOGIN OVERLAY
 
 //RESPONSIVE NAV LOGIN
@@ -37,7 +37,7 @@ closeOverlay.addEventListener("click", () => {
 signupBTN.addEventListener("click", () => {
   signupContainer.style.display = "flex";
   closeOverlay.style.display = "block"
-});
+})
 closeOverlay.addEventListener("click", () => {
   signupContainer.style.display = "none";
   closeOverlay.style.display = "none";

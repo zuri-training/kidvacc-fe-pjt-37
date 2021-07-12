@@ -2,6 +2,12 @@
 *{
     font-family: Poppins, sans-serif;
 }
+.after-login {
+    font-family: 'Poppins', sans-serif;
+    height: 12vh;
+    display: block;
+    background-color: #F4FBFF;
+}
 .profile_page{
     height: auto !important;
     display: flex;

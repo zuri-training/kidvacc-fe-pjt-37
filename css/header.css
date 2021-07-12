@@ -65,12 +65,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.search li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #08517A;
-    font-weight: 500;
-}
+
 .before_login_links {
     width: 31%;
 }
@@ -142,7 +137,7 @@ body {
 }
 
 .authorize_login a{
-    color: #DA8F06;
+    color: #DA8F06;;
 }
 
 .authorize_signup a{
@@ -183,7 +178,9 @@ body {
     padding-left: 37px;
     outline: none;
 }
-
+.menu_icon{
+    display: none;
+}
 @media screen and (max-width: 1374px) {
 
     .modal_content {
@@ -255,14 +252,6 @@ body {
     font-size: 20px;
     color: #08517A;
     font-weight: 500;
-}
-
-.active_link {
-    content:"";
-    max-width:120%;
-    border-bottom: 3px solid #08517A;
-    text-align: center;
-    font-weight: 700 !important;
 }
 
 /* Dropdown Button */
@@ -369,7 +358,6 @@ body {
     
 }
 
-
 .search::placeholder {
     font-style: italic;
     font-size: 14px;
@@ -396,11 +384,19 @@ body {
     .active_link{
         margin-left: 10rem;
     }
-      .nav_links {
+
+    .nav_container {
+        margin: 0 10px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    .authorize {
+    .nav_content{
+        width: 100%;
         display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        z-index: 9;
     }
     .icon_links {
         height: 0;
@@ -417,7 +413,7 @@ body {
       .nav_links {
         display: none;
     }
-    .authorize {
+    .navbar_items{
         display: none;
     }
     .active_link {
@@ -430,31 +426,27 @@ body {
     .nav_container {
         margin: 0px 1rem;
     }
-    .search {
-        width: 120px;
-        margin-right: 3rem;
+    .nav_links li:hover{
+        background-color: white;
     }
-    .modal_content {
-        position: relative;
-        width: 450px;
-        top: 15.6%;
-        right: 15.2%;
-        transform: translate(50%, -50%);
+    .authorize_login a{
+        color: #E8E8E8;
     }
-    .modal_content .search{
-        width: 250px;
+    .authorize_login a:hover{
+        color: #08517A;
     }
-    .password_show {
-        display: inline-block;
+    .authorize_signup a:hover{
+        background-color: #E8E8E8;
+        color: #DA8F06;
+    }
+
+    .active_link {
+        content:"";
+        border-bottom: none;
+        font-weight: 700 !important;
     }
 } 
 
-@media screen and (max-width: 600px){
-    .password_show {
-        display: inline;
-        margin-left: 14rem;
-        top: -45px;
-        right: 15.2%;    }
 }
 
   

@@ -5,10 +5,9 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
 }
-/* nav{
-    height: 12vh;
-    background-color: indigo;
-} */
+.after-login {
+    display: block;
+}
 .parent_wrapper{
     height: 88vh;
     background-image: url("../img/bg-doctors.svg");
@@ -161,11 +160,3 @@
         height: 145px;
     }
   }
-
-  @media screen and (max-width: 1000px){
-    
-}
-
-@media screen and (max-width: 600px){
-   
-}

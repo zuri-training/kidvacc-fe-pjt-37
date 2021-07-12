@@ -10,7 +10,7 @@ body, *{
     background: url("../img/bg-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
-   background-size: cover;
+     background-size: cover;
 }
 .overlay {
     position: relative;
@@ -63,7 +63,7 @@ hr#center_border{
     justify-content: flex-end;
     margin-bottom: 6rem;
     margin-right: 7rem;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .bookings button {
     font-weight: bold;
@@ -102,7 +102,7 @@ hr#center_border{
     text-decoration: none;
 }
  /* media query for screens with heights greater than 790px: Desktop and TV */
- @media screen and (min-height: 800px) {
+@media screen and (min-height: 800px) {
     .slide_bar{
         height: 10rem;
         margin-top: -2rem;
@@ -112,81 +112,53 @@ hr#center_border{
     }
   }
 
-
-  @media only screen and (min-width : 800px) and (max-width : 1200px) {
-      .section {
-          height: 150vh;
-      }
-      /* .slide {
-        margin-left: 2rem;
-        display: block;
-      } */
-
-      .slide_bar {
-          /* display: inline; */
-          margin-left: -8rem;
-      }
-
-      .bookings {
-          margin-left: 2rem;
-          display: block;
-      }
-
-      #center_border {
-          display: none;
-      }
-
-      .sub_info {
-          display: block;
-      }
-
-      .gallery_img {
-        display: block;
-        margin-left: 2rem;
-        margin-bottom: 2rem;
-        height: 200px;
-        width: 500px;
+  @media screen and (max-height: 750px) {
+    .slide_bar{
+        margin-top: -1rem;
     }
-  }
+}
 
-  @media screen and (max-width: 800px) {
-    .section {
-        height: 180vh;
-    }
-    
-    #info {
-        overflow: auto;
-        height: 15rem;
-        width: 25rem;
-        margin-left: -8rem;
-        margin-top: -6rem;
-
+@media screen and (min-width: 280px) and (max-width: 768px){
+    .section{
+        height: auto;
     }
 
-    .slide_bar {
-        display: inline;
-        margin-left: -8rem;
-
+    .slide_bar{
+        flex-direction: column;
+        width: auto;
+        height: 20rem;
+        padding: 0.5rem;
+        justify-content: center;
+    }
+    .slide {
+        padding: 5rem 0.2rem 2rem 0.2rem;
     }
 
-    .bookings {
-        margin-left: 2rem;
-        display: block;
+    .bookings{
+        width: 100%;
+        justify-content: center;
+        margin-top: 1.5rem;
     }
-
-    #center_border {
-        display: none;
+    .bookings button {
+        font-size: 20px;
+        width: 230px;
+        height: 70px;
     }
 
     .sub_info {
-        display: block;
+        flex-direction: column;
+        text-align: center;
+        padding: 0.2rem 0.5rem;
+     }
+    hr#center_border{
+        display: none;
     }
-
-    .gallery_img {
-        display: inline-block;
-        margin-left: 2rem;
+    .gallery_img{
+        width: 100%;
         margin-bottom: 2rem;
-        height: 200px;
-        width: 300px;
+    }
+    div.img img{
+        height: 50px;
+        margin-right: 0rem;
     }
 }
