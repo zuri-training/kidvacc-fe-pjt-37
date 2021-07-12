@@ -34,7 +34,7 @@ let displayQuote = () => {
   quoteTextContainer.textContent = quotes[sliderIndex-1].quote;
   authorName.textContent = quotes[sliderIndex-1].author
 
-  setTimeout(displayQuote, 5000); 
+  setTimeout(displayQuote, 20000); 
 }
 displayQuote(); 
 // END OF QUOTE SLIDER REGION
